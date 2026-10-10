@@ -358,15 +358,17 @@ P3 uses its first 4000ms time quantum but has 4766ms remaining, so it returns to
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: P1's thread is in the New state after `new Thread(process)` creates it in `addProcessToQueue()`, before `start()` is called.
+   
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: P1 becomes Runnable when the scheduler calls `start()`; it is ready to run and waits for CPU time.
 
-3. **Running**: [When is P1 Running?]
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+3. **Running**:  P1 runs when the scheduler gives its thread CPU time and its `run()` method executes. In Java, Running is included in the `RUNNABLE` state.
 
-5. **Terminated**: [When is P1 Terminated?]
+4. **Waiting**: While P1 calls `Thread.sleep()`, its thread is technically in `TIMED_WAITING`; separately, the main thread waits for P1 when it calls `join()`.
+
+5. **Terminated**: P1's thread becomes Terminated when its `run()` method finishes and the thread exits.
 
 ## Question 4: Real-World Applications
 
@@ -376,32 +378,35 @@ P3 uses its first 4000ms time quantum but has 4766ms remaining, so it returns to
 
 **Your Answer:** *(3-5 sentences per example)*
 
-### Example 1 (operating-system level): [Name of scenario]
+### Example 1 (operating-system level): CPU Scheduling Among Ready Processes
+
 
 **Description**:
-[Describe the real-world scenario.]
+An operating system can use Round-Robin scheduling to share CPU time among ready processes.
+Each process receives a short time quantum, and a context switch lets the next process run when the quantum ends.
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+It gives processes turns in the ready queue, so one process cannot keep the CPU indefinitely.
+This improves fairness and responsiveness, especially when many programs are running.
 
-### Example 2: [Name of application/scenario]
+### Example 2: A Server Handling Client Requests
 
 **Description**:
-[Describe the real-world scenario or application.]
-
+A server can take turns running tasks for multiple client requests using worker threads.
+Each task gets a short time quantum, and a context switch lets another task make progress.
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
-
+It prevents one long request from holding up all the others.
+This can make the service feel more responsive when many clients are active.
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1.Threads have a lifecycle, and method calls such as `start()`, `sleep()`, and `join()` affect thread states.
+2.Round-Robin scheduling gives processes turns using a fixed time quantum.
+3.Re-queueing and context switching help share CPU time among processes.
 
 **Concepts I need to study more:**
-1.
-2.
+1.The exact Java thread states and how they differ from conceptual states such as Running.
+2.How operating systems choose time quanta and handle context-switching overhead.
 
 ---
 
