@@ -182,16 +182,20 @@
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - [October 10, 2026]
+**What I did**: Reviewed the project implementation and checked the final documentation.
 
 **Details**:
+- Reviewed the three implemented features.
+- Checked the development log entries.
+- Reviewed the technical answers for clarity.
+- Prepared the project for final submission.
 
-**Challenges**:
+**Challenges**: Making sure the project documentation was complete and consistent.
 
-**Solution**:
+**Solution**: Reviewed the project files and checked the required submission items.
 
-**Time spent**:
+**Time spent**: Approximately 2 hours.
 
 ---
 
