@@ -263,7 +263,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+I learned that multithreading allows a program to execute tasks using separate threads. I learned that the Runnable interface defines the task that a thread will perform. The Thread.start() method starts a new thread, while Thread.join() makes one thread wait for another thread to finish. I also learned that Thread.sleep() pauses a thread temporarily. In this assignment, I explored how threads represent processes in a CPU scheduling simulation. I understood that threads can have different states during execution. I found it interesting to learn how thread execution is managed by the program.
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -271,7 +271,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+The most challenging part of this assignment was understanding the existing Java code and how the scheduler worked. At first, it was difficult to understand how threads represented processes and how the ready queue managed them. I also needed time to understand how the different methods worked together. Implementing the three required features without affecting the existing code was another challenge. I worked through the project step by step to understand its structure. This assignment showed me the importance of understanding existing code before making changes. Completing the features helped me become more familiar with Java and CPU scheduling.
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -279,7 +279,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+I overcame the challenges by working through the assignment one step at a time. I reviewed the project instructions and examined the existing Java code to understand its structure. I implemented the required features separately instead of changing everything at once. I used the terminal and Git to manage the project and save my changes. I checked the results after making changes to identify potential problems. When I did not understand a step, I reviewed the instructions and asked for help. This approach helped me organize my work and make progress.
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -287,7 +287,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+Multithreading is useful in many real-world applications because it allows different tasks to run concurrently. For example, a web browser can handle user interactions while performing background tasks. A music player can continue playing music while the user browses the application. Mobile applications can use background threads to perform operations without freezing the user interface. Games can also use multiple threads to process game logic and load resources. These examples relate to the assignment because the scheduler manages processes and their execution. Understanding multithreading helps developers build applications that are more responsive and efficient.
 
 ### Optional: What would you like to learn more about?
 
@@ -319,8 +319,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
-
+A process is an independent program with its own memory space, while threads are units of execution that can share memory within the same process. Creating separate operating-system processes generally requires more resources and has more communication overhead than using threads. In this assignment, the Process class represents a simulated process, while a real Java thread executes it. The addProcessToQueue() method uses new Thread(process) to create a thread for the simulated process.
 ## Question 2: Ready Queue Behavior
 
 **Question**: In Round-Robin scheduling, what happens when a process doesn't finish within its time quantum? Explain using an example from **your** program output, including **how many times that process was re-queued** before it finished, and explain why re-queueing matters for fairness.
@@ -331,16 +330,26 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
-
+In Round-Robin scheduling, if a process does not finish within its time quantum, it returns to the end of the ready queue. In my program, P3 has a burst time of 8766ms and the time quantum is 4000ms. P3 was re-queued two times before finishing, with 4766ms remaining after the first quantum and 766ms after the second quantum. It then ran for the remaining 766ms and finished. Re-queueing improves fairness because other processes get a chance to use the CPU between P3's turns.
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+P3 executing quantum [4000ms]
+Remaining time: 4766ms
+P3 yields CPU for context switch
+P3 added to ready queue
+
+P3 executing quantum [4000ms]
+Remaining time: 766ms
+P3 yields CPU for context switch
+P3 added to ready queue
+
+P3 executing quantum [766ms]
+Remaining time: 0ms
+P3 finished execution!
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
-
+P3 uses its first 4000ms time quantum but has 4766ms remaining, so it returns to the ready queue. After its second 4000ms quantum, it has 766ms remaining and is re-queued a second time. On its third turn, P3 uses the remaining 766ms and finishes execution. This shows how Round-Robin allows other processes to use the CPU between P3's turns, improving fairness.
 ## Question 3: Thread Lifecycle
 
 **Question**: A thread goes through these states: **New**, **Runnable**, **Running**, **Waiting**, **Terminated**. Walk through these states for one process (e.g., P1) from your simulation. For each state, explain **when** P1 enters it and **which line or method call** triggers the transition (`Thread.start()`, `Thread.join()`, `Thread.sleep()`, etc.).
