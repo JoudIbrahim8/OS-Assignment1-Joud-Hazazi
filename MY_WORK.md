@@ -148,7 +148,7 @@
 
 ---
 
-### Entry 2 - [2 - October 9, 2026]
+### Entry 2 - [ October 9, 2026]
 **What I did**: Implemented the required scheduling features and uploaded the changes to GitHub.
 
 **Details**:
@@ -165,16 +165,20 @@
 
 ---
 
-### Entry 3 - [October 8, 2026]
-**What I did**:
+### Entry 3 - [October 10, 2026]
+**What I did**: Reviewed the project and worked on the technical answers.
 
 **Details**:
+- Reviewed the Round-Robin scheduling concepts.
+- Worked on explaining the ready queue behavior.
+- Reviewed the Java thread lifecycle states.
+- Checked the project documentation before submission.
 
-**Challenges**:
+**Challenges**: Understanding the differences between thread states and explaining how they relate to the code.
 
-**Solution**:
+**Solution**: Reviewed the relevant methods, including `Thread.start()`, `Thread.sleep()`, and `Thread.join()`.
 
-**Time spent**:
+**Time spent**: Approximately 3 hours.
 
 ---
 
@@ -192,13 +196,14 @@
 ---
 
 ### Entry 5 - [Date and Time]
-**What I did**:
+**What I did**: 
 
 **Details**:
 
-**Challenges**:
 
-**Solution**:
+**Challenges**: 
+
+**Solution**: 
 
 **Time spent**:
 
