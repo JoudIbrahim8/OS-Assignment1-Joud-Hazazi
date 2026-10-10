@@ -130,16 +130,21 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [October 7, 2026]
+**What I did**: Set up the project and connected GitHub with the required development tools.
 
-**Details**:
 
-**Challenges**:
+**Details**: 
+- Opened GitHub and accessed the assignment repository.
+- Connected the repository with the required development tools.
+- Prepared the project environment to start working on the assignment.
 
-**Solution**:
 
-**Time spent**:
+**Challenges**: I needed to understand how the required tools and the GitHub repository worked together.
+
+**Solution**:I followed the setup instructions and checked that I could access the project files.
+
+**Time spent**:[Approximately 2 hours.]
 
 ---
 
@@ -156,7 +161,7 @@
 
 ---
 
-### Entry 3 - [Date and Time]
+### Entry 3 - [October 8, 2026]
 **What I did**:
 
 **Details**:
