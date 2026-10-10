@@ -199,17 +199,20 @@
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**: 
+### Entry 5 - [October 10, 2026]
+**What I did**: Completed the final review of my assignment and prepared it for submission.
 
 **Details**:
+- Reviewed the development log.
+- Checked the technical answers.
+- Reviewed the GitHub repository and commit history.
+- Checked the remaining submission requirements.
 
+**Challenges**: Making sure all required assignment components were completed before submission.
 
-**Challenges**: 
+**Solution**: Reviewed the assignment checklist and checked the project files.
 
-**Solution**: 
-
-**Time spent**:
+**Time spent**: Approximately 1 hour.
 
 ---
 
