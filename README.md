@@ -551,8 +551,14 @@ These questions help you demonstrate technical understanding. Each answer should
 ### What to Submit on Blackboard:
 
 Submit **only the link to your public GitHub repository** (no other files or information):
+| **Full Name** | Joud Ibrahim Hazazi |
+| **Student ID** | 445052049 |
+| **University Email** | 445052049@std.psau.edu.sa |
+| **GitHub Username** | JoudIbrahim8 |
+| **Repository Link** | https://github.com/JoudIbrahim8/OS-Assignment1-Joud-Hazazi |
 
-```
+
+```  
 https://github.com/[your-username]/OS-Assignment1-[YourFirstName]-[YourLastName]
 ```
 
