@@ -148,16 +148,20 @@
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - [2 - October 9, 2026]
+**What I did**: Implemented the required scheduling features and uploaded the changes to GitHub.
 
 **Details**:
+ - Implemented Feature 1: Process Priority.
+- Implemented Feature 2: Context Switch Counter.
+- Implemented Feature 3: Waiting Time.
+- Created separate commits for the features and pushed the changes to GitHub.
+**Challenges**: Understanding the existing scheduler code and making the required changes.
 
-**Challenges**:
+**Solution**: Reviewed the code, implemented the features, and used Git to save and upload the changes.
 
-**Solution**:
 
-**Time spent**:
+**Time spent**: Approximately 4 hours.
 
 ---
 
