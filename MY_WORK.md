@@ -144,7 +144,7 @@
 
 **Solution**:I followed the setup instructions and checked that I could access the project files.
 
-**Time spent**:[Approximately 2 hours.]
+**Time spent**: Approximately 2 hours.
 
 ---
 
